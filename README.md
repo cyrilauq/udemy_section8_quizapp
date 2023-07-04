@@ -1,6 +1,8 @@
 # quiz
 
-This template should help get you started developing with Vue 3 in Vite.
+This application is an application made with the udemy course: Complete Vue Developer 2023: Zero to Mastery (Pinia, Vitest).
+In this app, you can answer 3 questions, it will show you how many question remains and at the end of it, it will show you how many questions you answered good.
+You can also reset the questions, so you can restart the quiz
 
 ## Recommended IDE Setup
 
