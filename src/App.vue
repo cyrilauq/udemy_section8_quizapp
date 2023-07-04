@@ -1,5 +1,11 @@
 <template>
     <div class="ctr">
+        <Questions v-if="questionsAnswered < questions.length" 
+            :questions="questions"
+            :questionsAnswered="questionsAnswered"
+            @question-answered=""
+            />
+        <Result v-else />
         <button type="button" class="reset-btn">Reset</button>
     </div>
 </template>
@@ -10,8 +16,13 @@ import Questions from '@/components/Questions.vue'
 
 export default {
     name: "App",
+    components: {
+        Questions,
+        Result
+    },
     data() {
         return {
+            questionsAnswered: 0,
             questions: [
                 {
                     q: 'What is 2 + 2?', 
